@@ -43,16 +43,3 @@ categories.insert([{
 
 
 module.exports = mongoose.model('OnlineLager',LagerSchema);
-
-/*
-"_id": "lager"
-}, {
-    "_id": "potter",
-    "tree": ["lager"],
-    "parent":"lager"
-} , {
-    "_id": "potter",
-    "tree": ["lager"],
-    "parent":"lager"
-}, {
-*/
