@@ -5,10 +5,18 @@ var categories = db.HarriesPotter.OnlineLager("katalog").categories;
 categories.insert([{
     
 "_id": "lager"
-} , {
-    "_id": "potter"
+} ,{
+    "_id": "Materialer"
   , "tree": ["lager"]
   , "parent": "lager"
+}, {
+    "_id": "underskaal"
+  , "tree": ["lager","Materialer"]
+  , "parent": "Materialer"
+},{
+    "_id": "potter"
+  , "tree": ["lager", "Materialer"]
+  , "parent": "Materialer"
 }, {
     "_id": "indedoers"
   , "tree": ["lager","potter"]
@@ -18,14 +26,14 @@ categories.insert([{
   , "tree": ["lager","potter"]
   , "parent": "potter"
 }, {
-    "_id": "Materialer"
-  , "tree": ["lager","potter"]
-  , "parent": "potter"
+  "_id": "indedoers"
+, "tree": ["lager","undersaal"]
+, "parent": "undersaal"
 }, {
-    "_id": "underskaal"
-  , "tree": ["lager",]
-  , "parent": "lager"
-}, {
+  "_id": "udendoers"
+, "tree": ["lager","undersaal"]
+, "parent": "undersaal"
+},{
 
 
 
