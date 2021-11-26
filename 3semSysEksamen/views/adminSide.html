@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin side</title>
+</head>
+<body>
+
+<h1>Admin side</h1>
+
+<form action="/action_page.php">
+    <label for="fname">Produkt navn:</label><br>
+    <input type="text" id="nameOnProduct" name="fname" value=""><br><br>
+    <label for="aname">Antal Stk:</label><br>
+    <input type="text" id="quantity" name="aname" value=""><br><br>
+    <label for="lname">Matrialer:</label><br>
+    <input type="text" id="material" name="lname" value=""><br><br>
+    <label for="aname">Klima:</label><br><br>
+    <input type="checkbox" id="outside" name="aname" value="">udendørs<br>
+    <input type="checkbox" id="inside" name="aname" value="">indedørs<br><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+  <script>
+
+function addNewProduct(){
+    var productName = document.getElementById(nameOnProduct).innerHTML;
+    var qty = document.getElementById(quantity).innerHTML;
+    var material = document.getElementById(material).innerHTML;
+    var inside = document.getElementById(inside).innerHTML;
+    var outside = document.getElementById(outside).innerHTML;
+}
+  </script>
+</body>
+</html>
