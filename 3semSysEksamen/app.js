@@ -20,13 +20,36 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin', adminRouter);
+
+const lagerSchema = {
+
+  title: String,
+  quantity: Number,
+  Material: String,
+  outside: Boolean,
+  inside: Boolean
+}
+const Note = mongoose.model("onlineLager",lagerSchema);
+
+app.post("/", function(req, res){
+let newNote = new Note(
+  {
+    title: req.body.fname,
+    quantity: req.body.aname,
+    Material: req.body.lname,
+    outside: req.body.sname,
+    inside: req.body.sname,
+  })
+  newNote.save();
+  res.redirect('/../views/admin');
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

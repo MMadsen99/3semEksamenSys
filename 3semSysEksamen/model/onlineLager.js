@@ -10,6 +10,4 @@ const lagerSchema = {
 
 }
 
-
-
-module.exports = mongoose.model('OnlineLager',lagerSchema);
+module.exports = mongoose.model('onlineLager',lagerSchema);
