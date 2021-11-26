@@ -31,24 +31,23 @@ app.use('/admin', adminRouter);
 const lagerSchema = {
 
   title: String,
-  quantity: Number,
+  quantity: String,
   Material: String,
   outside: Boolean,
   inside: Boolean
 }
-const Note = mongoose.model("onlineLager",lagerSchema);
+const Note = mongoose.model("OnlineLager",lagerSchema);
 
-app.post("/", function(req, res){
-let newNote = new Note(
-  {
+app.post("/admin", function(req, res){
+let newNote = new Note({
     title: req.body.fname,
     quantity: req.body.aname,
     Material: req.body.lname,
     outside: req.body.sname,
-    inside: req.body.sname,
+    inside: req.body.sname
   })
   newNote.save();
-  res.redirect('/../views/admin');
+  res.redirect('/admin');
 })
 
 // catch 404 and forward to error handler
