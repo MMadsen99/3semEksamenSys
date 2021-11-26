@@ -3,8 +3,8 @@ var router = express.Router();
 const path = require('path');
 
 /* GET home page. */
-router.get('/', function(req, res,) {
-  res.send("hej");
+router.get('/', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '/../views/adminSide.html'));
 });
 
 module.exports = router;
