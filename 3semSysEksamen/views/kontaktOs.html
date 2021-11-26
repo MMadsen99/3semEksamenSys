@@ -8,13 +8,13 @@
 </head>
 <body>
         <h1>Kontakt os(Alt er placeholder!)</h1>
-    <p class="ontactinfo"> Firma: Harri's Potter </p>
-    <p class="contactinfo">Adresse: skælskør hjordrupvej 42 <br> 4230 </p>
-    <p class="contactinfo">TelefonNummer: 42500087Placeholder</p>
-    <p class="Mail">Email: HarrisPotter@hjordrup.GOD</p>
+    <p class="contactinfo"> Firma: Harri's Potter </p>
+    <p class="contactinfo">Adresse: Skælskør Hjordrupvej 42 <br> 4230 </p>
+    <p class="contactinfo">Telefonnummer: 42500087Placeholder</p>
+    <p class="Mail">Email: harrispotter.salg@gmail.com</p>
 
 
-    <form>
+    <form id="=contactForm">
         <label for="Mail">Mail:</label><br>
         <input type="text" id="Mail" name="Mail"><br>
         <label for="Nr">Nummer:</label><br>
@@ -23,11 +23,11 @@
         <input type="text" id="Name" name="Name"><br>
         <label for="Message">Besked</label><br>
         <textarea name="Message" id="Message" cols="50" rows="8"></textarea> <br>
-        <a href = "mailto:abc@example.com?subject = Feedback&body = Message">
-            Send    </a>
+        
+        <button onclick="sendEmail()">Send</button>
     </form>
 
 
-      <script src="../jsView/kontaktOs.js"></script>
+      <script src="../jsView/emailService.js"> </script>
 </body>
 </html>
