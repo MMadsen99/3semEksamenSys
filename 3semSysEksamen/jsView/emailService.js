@@ -1,5 +1,7 @@
 const nodemailer = require('nodemailer');
+
 require('dotenv/config');
+
 
 function sendEmail () {
 const transporter = nodemailer.createTransport({
@@ -27,26 +29,9 @@ const transporter = nodemailer.createTransport({
 
   })};
 
-  let contactForm = document.querySelector('.contactForm');
-  let mail = document.getElementById('Mail');
-  let phone = document.getElementById('Nr');
-  let name = document.getElementById('Navn');
-  let message = document.getElementById('Message');
-  
-  contactForm.addEventListener('submit', (e) =>{
-    e.preventDefault();
 
-    let formData = {
 
-      name: name.value,
-      email: mail.value,
-      phone: phone.value,
-      message: message.value
-      
-    }
-    console.log(formData);
-  } );
+module.exports = {sendEmail};
 
 
 
-  module.exports = sendEmail();

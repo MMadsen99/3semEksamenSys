@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="..\public\stylesheets\kontaktOs.css">
+    <link rel="stylesheet" href="../public/stylesheets/kontaktOs.css">
 
 
     <title>Kontakt Os</title>
@@ -15,7 +15,7 @@
     <p class="Mail">Email: harrispotter.salg@gmail.com</p>
 
 
-    <form id="=contactForm">
+    <form action="/sendEmail" method="post">
         <label for="Mail">Mail:</label><br>
         <input type="text" placeholder="Indtast din email..." id="Mail" name="Mail"><br>
         <label for="Nr">Nummer:</label><br>
@@ -25,15 +25,17 @@
         <label for="Message">Besked</label><br>
         <textarea name="Message" placeholder="Stil dit spørgsmål her..." id="Message" cols="50" rows="8"></textarea> <br>
         
-        <button onclick="sendEmail()">Send</button>
+        <button type="submit">Send</button>
     </form>
 
+
+
     <div>
-<img src="" alt="">
+
 
     </div>
 
 
-      <script src="../jsView/emailService.js"> </script>
+      <script> </script>
 </body>
 </html>
