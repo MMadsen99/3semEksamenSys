@@ -6,7 +6,7 @@ const app = require('../app');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '/../views/adminSide.html'));
+  res.sendFile(path.join(__dirname, '/../views/adminSite.html'));
 });
 
 module.exports = router;

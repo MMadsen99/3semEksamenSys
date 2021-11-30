@@ -32,19 +32,19 @@ const lagerSchema = {
 
   title: String,
   quantity: String,
-  Material: String,
-  outside: String,
-  inside: String
+  material: String,
+  klima: String,
+  category: String
 }
 const Note = mongoose.model("OnlineLager",lagerSchema);
 
 app.post("/admin", function(req, res){
 let newNote = new Note({
-    title: req.body.fname,
-    quantity: req.body.aname,
-    Material: req.body.lname,
-    outside: req.body.sname,
-    inside: req.body.sname
+    title: req.body.productNameForm,
+    quantity: req.body.quantityForm,
+    material: req.body.materialForm,
+    klima: req.body.klimaForm,
+    category: req.body.categoriesForm
   })
   newNote.save();
   res.redirect('/admin');

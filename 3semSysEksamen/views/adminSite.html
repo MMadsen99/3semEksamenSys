@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin side</title>
+</head>
+<body>
+
+<h1>Admin side</h1>
+<div>
+<form method="post" action="/admin">
+    <label for="productNameForm">Produkt navn:</label><br>
+    <input type="text" id="nameOnProduct" name="productNameForm" value=""><br><br>
+    <label for="quantityForm">Antal Stk:</label><br>
+    <input type="text" id="quantity" name="quantityForm" value=""><br><br>
+    <label for="materialForm">Matrialer:</label><br>
+    <input type="text" id="material" name="materialForm" value=""><br><br>
+
+    <label for="klimaSelection">Klima:</label><br><br>
+    <select id="klimaSelection" name="klimaForm" size="1">
+      <option value="outside">udenfor</option>
+      <option value="indenfor">indenfor</option>
+      <option value="indenfor/udenfor">undenfor & indenfor</option>
+    </select><br><br>
+
+    <label for="categoryForm">Kategori:</label><br>
+    <select id="categories" name="categoriesForm" size="1">
+      <option value="potte">Potte</option>
+      <option value="underskaal">underskål</option>
+    </select><br><br>
+    
+    <input type="submit" value="Submit">
+
+  </form> 
+</div>
+
+
+</body>
+</html>
