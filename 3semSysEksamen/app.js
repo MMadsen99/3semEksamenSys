@@ -33,8 +33,8 @@ const lagerSchema = {
   title: String,
   quantity: String,
   Material: String,
-  outside: Boolean,
-  inside: Boolean
+  outside: String,
+  inside: String
 }
 const Note = mongoose.model("OnlineLager",lagerSchema);
 
