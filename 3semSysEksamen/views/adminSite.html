@@ -68,12 +68,12 @@ function addNewCategory(){
 }
 </script>
 
-<button id="btn_click">Click Me</button>
+<button id="btn_click">Klik på mig</button>
 <script>
   var button = document.getElementById("btn_click");
+  let url = new URL('http://localhost:3000/admin/onlineLager');
 
-
-button.addEventListener('click', function() { window.location = 'adminSiteOnlineLager.html'; });
+button.addEventListener('click', function() { document.location = url; });
 </script>
 
 </body>
