@@ -10,6 +10,7 @@ require('dotenv/config');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var adminRouter = require('./routes/admin');
 
 
 
@@ -18,18 +19,41 @@ var usersRouter = require('./routes/users');
 var kontaktOsRouter = require('./routes/kontaktOs');
 var app = express();
 
-// view engine setup
+// view engine setup'´
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs','html');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/admin', adminRouter);
+
+const lagerSchema = {
+
+  title: String,
+  quantity: String,
+  material: String,
+  klima: String,
+  category: String
+}
+const Note = mongoose.model("OnlineLager",lagerSchema);
+
+app.post("/admin", function(req, res){
+let newNote = new Note({
+    title: req.body.productNameForm,
+    quantity: req.body.quantityForm,
+    material: req.body.materialForm,
+    klima: req.body.klimaForm,
+    category: req.body.categoriesForm
+  })
+  newNote.save();
+  res.redirect('/admin');
+})
 
 app.use('/kontaktOs', kontaktOsRouter);
 
