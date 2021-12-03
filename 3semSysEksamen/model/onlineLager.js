@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
-const lagerSchema = {
+const lagerSchema =  new mongoose.Schema( {
 
   title: String,
   quantity: Number,
-  Material: String,
-  outside: Boolean,
-  inside: Boolean
-
-}
+  material: String,
+  klima: String,
+  category: String
+  
+});
 
 module.exports = mongoose.model('onlineLager',lagerSchema);

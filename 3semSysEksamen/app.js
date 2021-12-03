@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 require('dotenv/config');
-
+const connect = require('./database/connect');
 
 
 var indexRouter = require('./routes/index');
@@ -13,10 +13,8 @@ var usersRouter = require('./routes/users');
 var adminRouter = require('./routes/admin');
 
 
-
-
-
 var kontaktOsRouter = require('./routes/kontaktOs');
+const connectDB = require('./database/connect');
 var app = express();
 
 // view engine setup'´
@@ -29,48 +27,29 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin', adminRouter);
-
-const lagerSchema = {
-
-  title: String,
-  quantity: String,
-  material: String,
-  klima: String,
-  category: String
-}
-const Note = mongoose.model("OnlineLager",lagerSchema);
-
-app.post("/admin", function(req, res){
-let newNote = new Note({
-    title: req.body.productNameForm,
-    quantity: req.body.quantityForm,
-    material: req.body.materialForm,
-    klima: req.body.klimaForm,
-    category: req.body.categoriesForm
-  })
-  newNote.save();
-  res.redirect('/admin');
-})
-
+app.use('/admin/onlineLager', adminRouter);
 app.use('/kontaktOs', kontaktOsRouter);
+
+ async function start(){
+
+  try{
+    await connectDB(process.env.CONNECT_TO_DB);
+    console.log('Connected to db');
+  }catch(error){
+  console.log(error);
+  }
+  
+}
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
-
-//Connect to database
-try{
-  mongoose.connect(process.env.CONNECT_TO_DB);
-  console.log("Connected to DB")
-  
-  }catch(error){
-      console.log(error);
-  }
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -82,5 +61,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+start();
 
 module.exports = app;
