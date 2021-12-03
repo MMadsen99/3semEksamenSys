@@ -29,11 +29,15 @@ router.get('/onlineLagerData', async function(req, res, next) {
 
 router.get('/onlineLager', async function (req,res, next) {
 
-  res.sendFile(path.join(__dirname, '/../views/adminSiteOnlineLager.html'))});
+  res.sendFile(path.join(__dirname, '/../views/adminSiteOnlineLager.html'))
+
+});
 
   router.get('/OnlineLagerTabel.js', async function (req,res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.sendFile(path.join(__dirname, '/../jsView/OnlineLagerTabel.js'))});
+    res.sendFile(path.join(__dirname, '/../jsView/OnlineLagerTabel.js'))
+    
+  });
 
 
 
