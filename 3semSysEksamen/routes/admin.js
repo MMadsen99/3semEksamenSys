@@ -12,11 +12,12 @@ router.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '/../views/adminSite.html'));
 });
 
-router.get('/onlineLager', async function(req, res, next) {
+router.get('/onlineLagerData', async function(req, res, next) {
 
   try {
     const item = await (await onlineLager.find({}));
     console.log(item);
+    res.send(JSON.stringify(item));
     
     
 
@@ -24,9 +25,17 @@ router.get('/onlineLager', async function(req, res, next) {
     console.log(error)
   }
 
-  res.sendFile(path.join(__dirname, '/../views/adminSiteOnlineLager.html'));
-
 });
+
+router.get('/onlineLager', async function (req,res, next) {
+
+  res.sendFile(path.join(__dirname, '/../views/adminSiteOnlineLager.html'))});
+
+  router.get('/OnlineLagerTabel.js', async function (req,res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.sendFile(path.join(__dirname, '/../jsView/OnlineLagerTabel.js'))});
+
+
 
 router.post("/", async function(req,res){
 
