@@ -12,7 +12,7 @@
 <div id="addProduct">
 <h3>Tilføj produkt </h3>
 <div id="child"></div>
-<form method="post" action="/admin">
+<form method="post" action="/admin" onsubmit="this.submit(); this.reset(); return false;">
 
     <label for="productNameForm">Produkt navn:</label><br>
     <input type="text" id="nameOnProduct" name="productNameForm" value=""><br><br>
