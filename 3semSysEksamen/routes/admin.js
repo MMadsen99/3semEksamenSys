@@ -7,7 +7,7 @@ const onlineLager = require('../model/onlineLager');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '/../views/adminSite.html'));
+  res.sendFile(path.join(__dirname, 'localhost:3000/adminSite.html'));
 });
 
 router.get('/onlineLager', async function(req, res, next) {
@@ -36,7 +36,7 @@ router.post("/", async function(req,res){
 
   try {
     const item = await onlineLager.create(newNote);
-    res.redirect('/admin');
+    res.redirect('localhost:3000/adminSite.html');
   } catch (error) {
     console.log(error)
   }
