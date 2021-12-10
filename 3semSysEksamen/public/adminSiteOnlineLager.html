@@ -18,9 +18,43 @@
 
     <h1>Online lager</h1>
 
+//Updates the StorageTable
+    <form method="patch" action="/admin" onsubmit="this.submit(); this.reset(); return false;">
 
-    <button id="updateStorage" > Opdater lager</button>
-    <button id="deleteItemFromStorage">Slet vare fra lager</button>    
+      <label for="id">ID:</label><br>
+      <input type="text" id="iDOfProduct" name="iDForm" value=""><br><br>
+      <label for="productNameForm">Produkt navn:</label><br>
+      <input type="text" id="title" name="productNameForm" value=""><br><br>
+      <label for="quantityForm">Antal Stk:</label><br>
+      <input type="text" id="quantity" name="quantityForm" value=""><br><br>
+      <label for="materialForm">Matrialer:</label><br>
+      <input type="text" id="material" name="materialForm" value=""><br><br>
+  
+      <label for="klimaSelection">Klima:</label><br><br>
+      <select id="klimaSelection" name="klimaForm" size="1">
+        <option value="outside">Udenfor</option>
+        <option value="indenfor">Indenfor</option>
+        <option value="indenfor/udenfor">Undenfor & Indenfor</option>
+      </select><br><br>
+  
+      <label for="categoryForm">Kategori:</label><br>
+      <select id="categories" name="categoriesForm" size="1">
+        <option value="potte">Potte</option>
+        <option value="underskaal">Underskål</option>
+      </select><br><br>
+      
+      <input type="submit" value="Opdater produkt">
+  
+    </form> 
+//Deletes a product
+    <form method="delete" action="/admin" onsubmit="this.submit(); this.reset(); return false;">
+
+      <label for="id">ID:</label><br>
+      <input type="text" id="iDOfProduct" name="iDForm" value=""><br><br>
+      
+      <input type="submit" value="Slet produkt">
+  
+    </form>   
 
     <div id="table">
     <table id="StorageTable">

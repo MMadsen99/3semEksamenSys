@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const { path } = require('../app');
+const { patch } = require('../routes');
 
 const lagerSchema =  new mongoose.Schema( {
 
