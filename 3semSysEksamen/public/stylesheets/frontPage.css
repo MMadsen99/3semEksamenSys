@@ -65,13 +65,19 @@ h1{
     display: block;
   }
   .images-boxs{
-    display: block; 
+    display: flexbox; 
+    margin: auto;
+    width: 45%;
+    max-width: auto;
+    position: relative;
   }
   .selcetcatagory{
     display: inline-block;
-    max-width:100px;
-    max-height:100px;
+    max-width:150px;
+    max-height:150px;
     border-radius: 2%;
+    padding-right: 2%;
+    
   }
 
 * {box-sizing:border-box}
@@ -130,7 +136,7 @@ img{
 .dot {
   position: relative;
   cursor: pointer;
-  height: 15px;
+  height: 16px;
   width: 15px;
   margin: 10px 5px;
   background-color: #bbb;
@@ -159,4 +165,21 @@ img{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.footerFrontPage{
+    background-color: rgb(129, 129, 129);
+  color: white;
+  overflow: auto;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.footerContent{
+
+
 }
