@@ -48,6 +48,16 @@ router.post("/", async function(req,res){
 })
 
 
+router.patch("/", async function(req,res){
+console.log('I am on this route');
+res.redirect('localhost:3000/adminSite.html');
+    res.status(200).json();
+
+});
+
+
+
+
 
 
 

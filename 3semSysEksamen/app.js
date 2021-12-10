@@ -11,8 +11,11 @@ const connect = require('./database/connect');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var adminRouter = require('./routes/admin');
+var updateItem = require('./routes/updateItem');
 
 const connectDB = require('./database/connect');
+const getItems = require('./routes/getID');
+const deleteItems = require('./routes/deleteItems');
 var app = express();
 
 // view engine setup'´
@@ -26,6 +29,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/admin', adminRouter);
+app.use('/update',updateItem);
+app.use('/items', getItems);
+app.use('/deleteItem',deleteItems);
+
 /*
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
