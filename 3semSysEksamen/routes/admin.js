@@ -5,12 +5,13 @@ const { post } = require('.');
 const app = require('../app');
 const onlineLager = require('../model/onlineLager');
 
-/* GET home page. */
+/* GET home page. 
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '/../views/adminSite.html'));
+  res.sendFile(path.join(__dirname, 'localhost:3000/adminSite.html'));
 });
+*/
 
-router.get('/onlineLager', async function(req, res, next) {
+/*router.get('/onlineLager', async function(req, res, next) {
 
   try {
     const item = await onlineLager.find({title:"test"});
@@ -23,6 +24,7 @@ router.get('/onlineLager', async function(req, res, next) {
   res.sendFile(path.join(__dirname, '/../views/adminSiteOnlineLager.html'));
 
 });
+*/
 
 router.post("/", async function(req,res){
 
@@ -36,12 +38,24 @@ router.post("/", async function(req,res){
 
   try {
     const item = await onlineLager.create(newNote);
-    res.redirect('/admin');
+    console.log(item)
+    res.redirect('localhost:3000/adminSite.html');
+    res.status(200).json();
   } catch (error) {
     console.log(error)
   }
 
 })
+
+
+router.patch("/", async function(req,res){
+console.log('I am on this route');
+res.redirect('localhost:3000/adminSite.html');
+    res.status(200).json();
+
+});
+
+
 
 
 
