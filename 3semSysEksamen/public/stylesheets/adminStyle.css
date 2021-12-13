@@ -1,35 +1,36 @@
 
+body {
+    color: #47a562;
+}
+
+#startHeader{
+    color: black;
+
+}
+
 #addProduct {
 
     max-width: 200px;
     max-height: 500px;
-    border-style: solid;
-    border-color: black; 
     width: 100%;
     height: 100%;
+
 }
 
 
 #categoryDiv{
-    
-
     margin-top: 5px;
-
     max-width: 200px;
     max-height: 500px;
-
-    border-style: solid;
-    border-color: black;
     width: 100%;
-
-
 }
 
-#buttonOnlineLager {
 
+
+#buttonOnlineLager {
 max-width: fit-content;
 max-height: fit-content;
-margin-top: 5px;
+margin-top: 17px;
        
 }
 
