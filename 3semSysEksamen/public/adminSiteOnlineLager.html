@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Lager</title>
+    <link href="./stylesheets/onlineLagerAdmin.css" rel="stylesheet">
+
+    <style>
+    table, th, td {
+  border:1px solid black;
+    }
+
+    </style> 
+</head>
+<body>
+
+    <h1>Online lager</h1>
+
+    <form method="post" action="/update" onsubmit="this.submit(); this.reset(); return false;">
+
+      <label for="varerID">ID:</label><br>
+      <select id="ID" name="ID" ></select><br><br>
+      <label for="title">Produkt navn:</label><br>
+      <input type="text" id="title" name="title"><br><br>
+      <label for="quantity">Antal Stk:</label><br>
+      <input type="text" id="quantity" name="quantity"><br><br>
+      <label for="material">Matrialer:</label><br>
+      <input type="text" id="material" name="material"><br><br>
+  
+      <label for="klimaSelection">Klima:</label><br><br>
+      <select id="klimaSelection" name="klima" size="1">
+        <option value=""></option>
+        <option value="outside">Udenfor</option>
+        <option value="indenfor">Indenfor</option>
+        <option value="indenfor/udenfor">Undenfor & Indenfor</option>
+      </select><br><br>
+  
+      <label for="category">Kategori:</label><br>
+      <select id="category" name="category" size="1">
+        <option value=""></option>
+        <option value="potte">Potte</option>
+        <option value="underskaal">Underskål</option>
+      </select><br><br>
+      
+      <input type="submit" value="Opdater varer">
+
+  
+    </form>
+ <button id="deleteButton" onclick="deleteItem()"> Slet varer</button>
+
+ 
+<script src="./javascript/adminSiteOnlineLagerScripts.js"></script>
+</body>
+</html>
