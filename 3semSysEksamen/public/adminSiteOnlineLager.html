@@ -50,6 +50,14 @@
     </form>
  <button id="deleteButton" onclick="deleteItem()"> Slet varer</button>
 
+ <div id="buttonAdminSite"></div>
+ <button id="adminSite">Gå tilbage</button>
+ <script>
+   var button = document.getElementById("adminSite");
+   let url = new URL('http://localhost:3000/adminSite.html');
+ 
+ button.addEventListener('click', function() { document.location = url; });
+ </script>
  
 <script src="./javascript/adminSiteOnlineLagerScripts.js"></script>
 </body>
