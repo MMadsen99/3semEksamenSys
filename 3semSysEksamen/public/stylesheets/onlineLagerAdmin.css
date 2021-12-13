@@ -1,4 +1,32 @@
 
+html {
+  color: #47a562;
+}
+
+
+#deleteButton {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin-top: 1%;
+}
+
+#buttonAdminSite {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin-top: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 #updateStorage {
 
   margin-bottom: 10px;
@@ -17,3 +45,4 @@ border:1px solid black;
   
 
 }
+*/

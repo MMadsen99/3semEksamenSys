@@ -8,10 +8,9 @@
 </head>
 <body>
 
-<h1>Admin side</h1><br><br>
+<h1 id="startHeader">Admin side</h1><br><br>
 <div id="addProduct">
 <h3>Tilføj produkt </h3>
-<div id="child"></div>
 <form method="post" action="/admin" onsubmit="this.submit(); this.reset(); return false;">
 
     <label for="productNameForm">Produkt navn:</label><br>
@@ -21,7 +20,7 @@
     <label for="materialForm">Matrialer:</label><br>
     <input type="text" id="material" name="materialForm" value=""><br><br>
 
-    <label for="klimaSelection">Klima:</label><br><br>
+    <label for="klimaSelection">Klima:</label><br>
     <select id="klimaSelection" name="klimaForm" size="1">
       <option value="outside">Udenfor</option>
       <option value="indenfor">Indenfor</option>
@@ -34,25 +33,22 @@
       <option value="underskaal">Underskål</option>
     </select><br><br>
     
-    <input type="submit" value="Tilføj produkt">
+    <input type="submit" value="Tilføj produkt" >
 
   </form> 
 </div>
-</div>
 
-<div class="categoryClass" id="categoryDiv">
-<div id="child2">
+<div  id="categoryDiv">
   <form>
+    <br>
   <label for="newCategory">Tilføj ny Kategori:</label><br>
-  <input type="text" id="newCategory" name="newCategory" value=""><br><br>
+  <input type="text" id="newCategory" name="newCategory" value=""><br>
 
-  <input id="newCategoryButton" type="button" value="Tilføj kategori">
+  <input id="newCategoryButton" type="button" value="Tilføj kategori" style="margin-top: 3px;">
 </form>
-</div>
 </div>
 
 <script>
-
 var button = document.getElementById("newCategoryButton");
 
 button.addEventListener("click",addNewCategory);
@@ -79,8 +75,7 @@ function addNewCategory(){
 
 button.addEventListener('click', function() { document.location = url; });
 </script>
-</div>
-</div>
+
 
 
 </body>
