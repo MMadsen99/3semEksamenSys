@@ -3,19 +3,55 @@
 
 <head>
     <link rel="stylesheet" href="./stylesheets/kontaktOs.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./stylesheets/frontPage.css" rel="stylesheet">
+    <title>Harries Potter</title>
+    <script src="javascript/FrontPage.js"></script>
+    <div>
+      <a href="http://localhost:3000/frontPage.html"><h1>Harries Potter</h1></a>
+    </div>
 
     <title>Kontakt Os</title>
 </head>
+<nav>
+  
+    <div class="navbar">
+          
+      <div class="dropdown">
+        <button class="dropbtn">Potter 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="http://localhost:3000/catalog.html">Udenfor</a>
+          <a href="http://localhost:3000/catalog.html">Indenfor</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+          <button class="dropbtn">Underskål 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="http://localhost:3000/catalog.html">Udenfor</a>
+            <a href="http://localhost:3000/catalog.html">Indenfor</a>
+          </div>
+        </div> 
+        <a href="#">Tilbud</a>
+      <a href="#">Populære</a>
+      <a href="http://localhost:3000/kontaktOs.html" style="float: right;">Kontakt os</a>
+    </div>
+  
+  </nav>
 <body>
-        <h1>Kontakt os</h1>
-    <p class="contactinfo"> Firma: Harri's Potter </p>
+    <div class="TextBoxArea" style="margin-top: 2%;
+    ">
+            <p class="contactinfo"> Firma: Harri's Potter </p>
     <p class="contactinfo">Adresse:<br> 
         Skælskør Hjordrupvej 42 <br> 4230 </p>
     <p class="contactinfo">Telefonnummer: 42500087Placeholder</p>
     <p class="Mail">Email: harrispotter.salg@gmail.com</p>
+</div>
 
-
+<br>
     <form id="=contactForm">
         <label for="Mail">Mail:</label><br>
         <input type="text" placeholder="Indtast din email..." id="Mail" name="Mail"><br>
@@ -26,13 +62,8 @@
         <label for="Message">Besked</label><br>
         <textarea name="Message" placeholder="Stil dit spørgsmål her..." id="Message" cols="50" rows="8"></textarea> <br>
         
-        <button onclick="sendEmail()">Send</button>
+        <button class="SendMail" onclick="sendEmail()">Send</button>
     </form>
-
-    <div>
-<img src="" alt="">
-
-    </div>
-
+    
 </body>
 </html>
