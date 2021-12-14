@@ -36,7 +36,7 @@ h1{
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:greenyellow;
+    background-color: #d1f5ab;
   }
   
   .dropdown-content {
@@ -179,3 +179,7 @@ img{
   margin-right: -15px;
 }
 
+a{
+  text-decoration: none;
+  color: black
+}

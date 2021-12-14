@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/stylesheets/catalog.css" rel="stylesheet">
+    <link href="./stylesheets/catalog.css" rel="stylesheet">
     <title>Katalog</title>
+    <div>
+      <a href="http://localhost:3000/frontPage.html"><h1>Harries Potter</h1></a>
+    </div>
 </head>
 <body>
     <nav>
@@ -17,8 +20,8 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Udenfor</a>
-              <a href="#">Indenfor</a>
+              <a href="http://localhost:3000/catalog.html">Udenfor</a>
+              <a href="http://localhost:3000/catalog.html">Indenfor</a>
             </div>
           </div> 
           <div class="dropdown">
@@ -26,27 +29,45 @@
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Udenfor</a>
-                <a href="#">Indenfor</a>
+                <a href="http://localhost:3000/catalog.html">Udenfor</a>
+                <a href="http://localhost:3000/catalog.html">Indenfor</a>
               </div>
             </div> 
             <a href="#">Tilbud</a>
           <a href="#">Populære</a>
-          <a href="#" style="float: right;">Kontakt os</a>
+          <a href="http://localhost:3000/kontaktOs.html" style="float: right;">Kontakt os</a>
         </div>
       
       </nav>
 
       
       <div id="menu">
+      <div class="hedder">
         <h3>Filter</h3>
-
+      </div>
+      <div>
         <h5>Matrialer</h5>
-        <select id="material" name="material">
 
+        <select id="material" name="material">
+          <option value=""></option>
+          <option value="Ler">Ler</option>
+          <option value="Metal">Metal</option>
+          <option value="Terakotta">Terakotta</option>
+          <option value="Plastic">Plastic</option>
+        </select>
+      </div>
+      <div>
+        <h5>Inde/ude</h5>
+
+        <input type="radio" id="inde" name="material">
+          <label for="inde" value="indenfor">Indenfor</label><br>
+        <input type="radio" id="ude" name="material">
+          <label for="ude" value="ude">Udenfor</label><br>
+        <input type="radio" id="udeInde" name="material">  
+          <label for="udeInde" value="udeInde">Udenfor og indenfor</label><br>
 
         </select>
-
+      </div>
       </div>
     
 

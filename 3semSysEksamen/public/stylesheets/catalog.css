@@ -36,7 +36,7 @@ h1{
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:greenyellow;
+    background-color:#d1f5ab;
   }
   
   .dropdown-content {
@@ -88,7 +88,7 @@ h1{
   }
 #catalog{
     
-    border:1px solid hotpink;
+    border:1px hotpink;
     max-width: 1050px;
     margin-top: 0.5%;
     overflow: hidden;
@@ -96,12 +96,26 @@ h1{
     margin-right: 10%;
 }
 #menu{
-    border:1px solid black;
+    border:1px black;
     max-width: 15%;
     max-height: 400px;
-    background-color: lightgreen;
+    min-height: 300px;
+    min-width: 15%;
+    background-color:#d1f5ab;
     padding: 4px;
     margin-top: 0.5%;
     float: left;
     overflow:hidden;
+
+}
+.hedder {
+  text-align: center;
+  background-color:rgb(129, 129, 129);
+  margin: -10px;
+  padding: 5px;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: black
 }
