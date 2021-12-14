@@ -1,5 +1,3 @@
-
-
 const selector = document.getElementById('ID');
 
 
