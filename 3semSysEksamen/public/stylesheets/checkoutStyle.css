@@ -8,7 +8,6 @@ body{
 
 .row {
 
-    display: inline-flex;
     flex-wrap: wrap;
     margin: 0 -16px;
     justify-content: space-between;
@@ -22,6 +21,7 @@ body{
   .col-50 {
    
     flex: 10%;
+    
   }
   
   .col-75 {
@@ -37,11 +37,11 @@ body{
   
   .container {
     background-color: #f2f2f2;
-    padding: 5px 35px 15px 10px;
+    padding: 5px 35px 15px 5px;
   }
   
   input[type=text] {
-    width: 100%;
+    width: 50%;
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid #ccc;
@@ -63,7 +63,7 @@ body{
     background-color: blue;
     color: white;
     padding: 12px;
-    margin: 10px 25%;
+    margin: 10px ;
     border: none;
     width: 50%;
     border-radius: 3px;
