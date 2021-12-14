@@ -1,53 +1,33 @@
-
-
 body {
 
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 200px, #0c6027 100%) repeat-x scroll 0% 0% #0c6027;
-    width: 100%;
-    height: 100%
-}
-
-
-h1 {
-
-    font-family: 'Times New Roman', Times, serif;
-
-    font-style: italic;
-
-    font-size: 60px;
+    background-color: rgb(253, 251, 243);
 }
 
 p {
-    font-family: 'Times New Roman', Times, serif;
-
-    font-style: italic;
-
     font-size: 20px;
 }
-
-
-
-
-
 
 .SendSupport {
 width: 50px;
 height: 25px;
 }
+
 #Message{
     resize: none;
-
 }
 
-button {
+.SendMail {
 
     width: 75px;
     height: 25px;
 }
 
-
 form {
 
-    border-radius: 10%;
-    
+    border-radius: 10%;    
+}
+.TextBoxArea {
+    background-color:rgb(129, 129, 129);
+    padding: 5px;
+    color: white;
 }
