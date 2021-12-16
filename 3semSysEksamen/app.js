@@ -12,6 +12,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var adminRouter = require('./routes/admin');
 var updateItem = require('./routes/updateItem');
+var productInfo = require('./routes/productInformation');
 
 const connectDB = require('./database/connect');
 const getItems = require('./routes/getID');
@@ -32,13 +33,9 @@ app.use('/admin', adminRouter);
 app.use('/update',updateItem);
 app.use('/items', getItems);
 app.use('/deleteItem',deleteItems);
+app.use('/productInformation',productInfo);
 
-/*
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
-app.use('/admin/onlineLager', adminRouter);
-*/
  async function start(){
 
   try{
