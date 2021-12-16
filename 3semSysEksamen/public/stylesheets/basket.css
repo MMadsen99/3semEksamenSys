@@ -1,0 +1,174 @@
+body {
+}
+#basketContainer {
+    width: 70%;
+    height: 95%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+    position: relative;
+    margin-top: 45px;
+    margin-left: 275px;
+}
+
+#header{
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   #basket{
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 700;
+    color: #2F3841;
+   }
+   #removeAll{
+    font-size: 14px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+    border-bottom: 1px solid #E44C4C;
+    width: 65px;
+   }
+ /* /////////////////////////////////////////////////////////// */
+
+   #items{
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   #imgBox {
+    width: 15%;
+    text-align: center;
+   }
+   #productOverView {
+    margin-right: 125px;
+    margin-bottom: 100px;
+
+   }
+   #productName {
+    padding-top: 5px;
+    line-height: 10px;
+    font-size: 32px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+
+   }
+   #productInfo {
+    line-height: 10px;
+    font-size: 18px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #909090;
+   }
+
+   #count {
+       margin-right: 150px;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   #add {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+    cursor: pointer;
+   }
+
+   #quantity {
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+   }
+
+
+
+   #price {
+    height: 100%;
+    text-align: right;
+   }
+   #amount {
+    padding-top: 20px;
+    font-size: 26px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+   }
+   #removeItem{
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+   }
+
+
+   hr{
+    width: 95%;
+    float: right;
+    margin-right: 2%;
+   }
+
+   #checkout{
+    float: right;
+    padding-left: 50%;
+    width: 28%;
+   }
+   
+   #totalPrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   }
+   #total{
+    font-size: 22px;
+    font-family: ‘Open Sans’;
+    font-weight: 700;
+    color: #202020;
+   }
+   #finalItems{
+    font-size: 16px;
+    font-family: ‘Open Sans’;
+    font-weight: 500;
+    color: #909090;
+    line-height: 10px;
+   }
+   #finalPrice{
+    font-size: 36px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+   }
+   #checkoutBTN{
+    margin-top: 5px;
+    width: 10%;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #202020;
+   }

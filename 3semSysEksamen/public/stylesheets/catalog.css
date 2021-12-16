@@ -84,7 +84,7 @@ h1{
     max-height:300px;
     padding-left: 5%;
     padding-bottom: 2.5%;
-    
+     /* border: #d1f5ab solid; */
   }
 #catalog{
     
@@ -118,4 +118,9 @@ h1{
 a{
   text-decoration: none;
   color: black
+}
+
+.pris{
+padding: -10%;
+
 }

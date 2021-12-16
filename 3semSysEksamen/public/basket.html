@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="./stylesheets/basket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./stylesheets/frontPage.css" rel="stylesheet">
+    <title>Harries Potter</title>
+    <script src="javascript/basket.js"></script>
+    <div>
+      <a href="http://localhost:3000/frontPage.html"><h1>Harries Potter</h1></a>
+    </div>
+</head>
+<nav>
+  
+    <div class="navbar">
+          
+      <div class="dropdown">
+        <button class="dropbtn">Potter 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="http://localhost:3000/catalog.html">Udenfor</a>
+          <a href="http://localhost:3000/catalog.html">Indenfor</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+          <button class="dropbtn">Underskål 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="http://localhost:3000/catalog.html">Udenfor</a>
+            <a href="http://localhost:3000/catalog.html">Indenfor</a>
+          </div>
+        </div> 
+        <a href="#">Tilbud</a>
+      <a href="#">Populære</a>
+      <a href="http://localhost:3000/kontaktOs.html" style="float: right;">Kontakt os</a>
+    </div>
+
+  </nav>
+<body>
+    <div id="basketContainer">
+        <div id="header">
+    <h3 id="basket">Inkøbskurv </h3>    
+    <h5 id="removeAll"> Fjern Alle</h5>
+    </div>
+
+    <div id="items">
+        <div id="imgBox">
+            <img src="./imgs/image-placeholder.jpg" style="height: 200px;" />
+        </div>
+        <div id="productOverView">
+            <h1 id="productName">Placeholder Navn</h1>
+            <h3 id="productInfo">Ler, Indedørs, </h3>
+        </div>
+        <div id="count">
+            <div id="add">+</div>
+            <div id="quantity">2</div>
+            <div id="add">-</div>
+    </div>
+        <div id="price">
+            <div id="amount"> 119.95DKK </div>
+            <div id="removeItem">Fjern Vare</div>
+        </div>
+    </div>
+    <hr> <br>
+    <div class=”checkout” style="margin-left: 89%;">
+    <div class=”totalPrice”>
+    <div>
+    <div class=”total”>Total Pris</div>
+    </div>
+    <div class=”finalPrice”>979.85 DKK</div>
+    </div>
+    <button class=”checkoutBTN”>Forsæt til betaling</button>
+    <br> <br>
+    </div> 
+    </div>
+        
+</div>
+</body>
+</html>
