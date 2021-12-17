@@ -4,12 +4,13 @@ const onlineLager = require('../model/onlineLager');
 
 
 router.get("/", async (req,res) => {
+    
     const allItemsInDb = await onlineLager.findOne({_id:"61a8d456119a6948a90cf1c4"});
     res.status(200).json({allItemsInDb});
     
     }); 
 
-    
+
     /*
     let items = await fetch('http://localhost:3000/items');
     let jsonItem = await items.json();
