@@ -33,7 +33,9 @@ router.post("/", async function(req,res){
     quantity: req.body.quantityForm,
     material: req.body.materialForm,
     klima: req.body.klimaForm,
-    category: req.body.categoriesForm
+    category: req.body.categoriesForm,
+    price: req.body.priceForm,
+    description: req.body.descriptionForm
   };
 
   try {

@@ -45,6 +45,8 @@ async function addProductToDB() {
     materialForm: document.getElementById('material').value,
     klimaForm: document.getElementById('klimaSelection').value,
     categoriesForm: document.getElementById('categories').value,
+    priceForm: document.getElementById('price').value,
+    descriptionForm: document.getElementById('description').value
   });
 
   console.log(product);

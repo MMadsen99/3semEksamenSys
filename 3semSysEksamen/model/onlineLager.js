@@ -6,7 +6,9 @@ const lagerSchema =  new mongoose.Schema( {
   quantity: Number,
   material: String,
   klima: String,
-  category: String
+  category: String,
+  price: String,
+  description: String
   
 });
 

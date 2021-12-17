@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheets/productInformation.css" rel="stylesheet">
+   
+    <title>Mere information</title>
+    <div>
+        <a href="http://localhost:3000/frontPage.html"><h1>Harries Potter</h1></a>
+      </div>
+</head>
+<body>
+
+    <div class="navbar">
+        
+        <div class="dropdown">
+          <button class="dropbtn">Potter 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="http://localhost:3000/catalog.html">Udenfor</a>
+            <a href="http://localhost:3000/catalog.html">Indenfor</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Underskål 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="http://localhost:3000/catalog.html">Udenfor</a>
+              <a href="http://localhost:3000/catalog.html">Indenfor</a>
+            </div>
+          </div> 
+          <a href="#">Tilbud</a>
+        <a href="#">Populære</a>
+        <a href="http://localhost:3000/kontaktOs.html" style="float: right;">Kontakt os</a>
+      </div>
+
+    <div>  
+      <img src="./imgs/potte4.jpg"></img>
+      <h2 id="name"> navn på potte</h2>
+      <hr>
+      <div id="information"> <h3>information om potten</h3>
+
+        Efter vinterens mørke måneder trænger dine stueplanter til et nyt liv, men heldigvis er foråret for alvor på vej nu – og det har stueplanterne også opdaget.
+
+Lige så snart dagene begynder at blive længere, får de mere lys at gøre godt med og de begynder så småt at indstille sig på at vokse igen. Derfor er marts en perfekt måned at ompotte dine stueplanter i. 
+
+Her giver vi en guide til, hvordan du ompotter dine planter korrekt og giver dem de bedste betingelser for et langt liv i lerkrukker.
+      </div><br>
+      <hr><br><br><br><br><br>
+      <p id="pris">Pris: 500kr</p>
+      <button id="buttonToBasket">Tilføj til kurven</button>
+    </div>
+
+    <script src="javascript/productInformation.js"></script>
+</body>
+
+<script>
+
+   var button = document.getElementById("buttonToBasket");
+   let url = new URL('http://localhost:3000/basket.html');
+ 
+ button.addEventListener('click', function() { document.location = url; });
+ </script>
+
+</script>
+
+</html>
