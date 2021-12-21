@@ -52,6 +52,13 @@
 
  <div id="buttonAdminSite"></div>
  <button id="adminSite">Gå tilbage</button>
+ 
+ <input type='button' onclick='tableFromJson()' 
+    	value='Vis produkter fra lager' />
+
+      <p id='showData'></p>
+
+
  <script>
    var button = document.getElementById("adminSite");
    let url = new URL('http://localhost:3000/adminSite.html');
