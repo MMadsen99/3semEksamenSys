@@ -33,3 +33,58 @@ pris5.innerHTML = jsonItems.allItemsInDb[4].price + " kr";
 }
 
 addData();
+
+ document.getElementById("button1").onclick = function() {
+    sessionStorage.clear
+    sessionStorage.price = '350';
+    sessionStorage.name = 'Jumbo Orb';
+    sessionStorage.description = 'En kæmpe stor potte';
+
+    Object.keys(sessionStorage);
+
+    location.href = "productinformation.html";
+}
+
+document.getElementById("button2").onclick = function() {
+    sessionStorage.clear
+    sessionStorage.price = '400';
+    sessionStorage.name = 'Bombastic';
+    sessionStorage.description = 'En potte med et antik look';
+
+    Object.keys(sessionStorage);
+
+    location.href = "productinformation.html";
+}
+
+document.getElementById("button3").onclick = function() {
+    sessionStorage.clear
+    sessionStorage.price = '250';
+    sessionStorage.name = 'Lechuza quadro';
+    sessionStorage.description = 'Den er forsynet med originalt vandingssystem, der består af indsats me..';
+
+    Object.keys(sessionStorage);
+
+    location.href = "productinformation.html";
+}
+
+document.getElementById("button4").onclick = function() {
+    sessionStorage.clear
+    sessionStorage.price = '1500';
+    sessionStorage.name = 'Amfi';
+    sessionStorage.description = 'Elegant krukke i lækkert design og god kvalitet. En plantekrukke der v..';
+
+    Object.keys(sessionStorage);
+
+    location.href = "productinformation.html";
+}
+
+document.getElementById("button5").onclick = function() {
+    sessionStorage.clear
+    sessionStorage.price = '2600';
+    sessionStorage.name = 'Vadim';
+    sessionStorage.description = 'Udendørs plantekrukker i galvaniseret stål. Galvanisering af stål, gør...';
+
+    Object.keys(sessionStorage);
+
+    location.href = "productinformation.html";
+}
