@@ -5,26 +5,6 @@ const { post } = require('.');
 const app = require('../app');
 const onlineLager = require('../model/onlineLager');
 
-/* GET home page. 
-router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, 'localhost:3000/adminSite.html'));
-});
-*/
-
-/*router.get('/onlineLager', async function(req, res, next) {
-
-  try {
-    const item = await onlineLager.find({title:"test"});
-    console.log(item);
-  } catch (error) {
-    console.log(error)
-  }
-
-
-  res.sendFile(path.join(__dirname, '/../views/adminSiteOnlineLager.html'));
-
-});
-*/
 
 router.post("/", async function(req,res){
 
